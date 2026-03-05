@@ -1,0 +1,30 @@
+{
+  "name": "odin-restaurant-page",
+  "version": "1.0.0",
+  "description": "* Course: [The Odin Project - Full Stack JavaScript](https://www.theodinproject.com/paths/full-stack-javascript) * Exercise: [Full Stack JavaScript - Project: Restaurant Page](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krauzer94/odin-restaurant-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Krauzer94/odin-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/Krauzer94/odin-restaurant-page#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.4",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.6",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.3"
+  }
+}
