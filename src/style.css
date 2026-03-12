@@ -1,0 +1,21 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+}
+
+/* Global defaults */
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Holy Grail layout */
+.hg-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  min-height: 100%;
+}
