@@ -14,17 +14,26 @@ header, footer {
   text-align: center;
 }
 
-/* Reset overall header spacing */
+/* Header specific styling */
 header {
+  /* Spacing */
   padding: 1rem;
   box-sizing: border-box;
+
+  /* Coloring */
+  background-color: #FEF3D4;
 }
 
-/* Vertically align footer text */
+/* Footer specific styling */
 footer {
+  /* Spacing */
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* Coloring */
+  background-color: #5B4635;
+  color: #F2F2F2;
 }
 
 /* Middle content section */
