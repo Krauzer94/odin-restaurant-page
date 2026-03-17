@@ -1,11 +1,19 @@
 /* HTML general defaults */
 body {
+  /* Fonts */
   font-family: Arial, Helvetica, Verdana, Georgia, sans-serif;
+
+  /* Display */
   display: grid;
   grid-template-rows: auto 1fr 100px;
   grid-template-columns: 200px 1fr 200px;
+
+  /* Spacing */
   min-height: 100vh;
   margin: 0;
+
+  /* Coloring */
+  background-color: #FEF3D4;
 }
 
 /* Header and footer defaults */
@@ -19,9 +27,6 @@ header {
   /* Spacing */
   padding: 1rem;
   box-sizing: border-box;
-
-  /* Coloring */
-  background-color: #FEF3D4;
 }
 
 /* Footer specific styling */
