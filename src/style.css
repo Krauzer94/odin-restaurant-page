@@ -1,5 +1,6 @@
 * { border: 1px solid red; }
 
+/* HTML general defaults */
 body {
   display: grid;
   grid-template-rows: 100px 1fr 100px;
@@ -8,18 +9,22 @@ body {
   margin: 0
 }
 
+/* Header and footer defaults */
 header, footer {
   grid-column-end: span 3
 }
 
+/* Middle content section */
 main {
   grid-column-start: 2
 }
 
+/* Horizontal navigation bar */
 nav {
   grid-row-start: 2
 }
 
+/* Vertical spacing divs */
 aside {
   grid-column-start: 3
 }
