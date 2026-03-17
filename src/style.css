@@ -1,7 +1,6 @@
-* { border: 1px solid red; }
-
 /* HTML general defaults */
 body {
+  font-family: Arial, Helvetica, Verdana, Georgia, sans-serif;
   display: grid;
   grid-template-rows: auto 1fr 100px;
   grid-template-columns: 200px 1fr 200px;
