@@ -1,3 +1,5 @@
+* { border: 1px solid red; }
+
 /* HTML general defaults */
 body {
   display: grid;
@@ -17,6 +19,13 @@ header, footer {
 header {
   padding: 1rem;
   box-sizing: border-box;
+}
+
+/* Vertically align footer text */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Middle content section */
