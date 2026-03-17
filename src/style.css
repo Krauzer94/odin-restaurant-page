@@ -36,6 +36,12 @@ footer {
   color: #F2F2F2;
 }
 
+/* Remove link style */
+a {
+  color: lightblue;
+  text-decoration: none;
+}
+
 /* Middle content section */
 main {
   grid-column-start: 2;
