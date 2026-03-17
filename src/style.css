@@ -1,7 +1,7 @@
 /* HTML general defaults */
 body {
   display: grid;
-  grid-template-rows: 100px 1fr 100px;
+  grid-template-rows: auto 1fr 100px;
   grid-template-columns: 200px 1fr 200px;
   min-height: 100vh;
   margin: 0;
@@ -13,6 +13,12 @@ header, footer {
   text-align: center;
 }
 
+/* Reset overall header spacing */
+header {
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
 /* Middle content section */
 main {
   grid-column-start: 2;
@@ -20,7 +26,12 @@ main {
 
 /* Horizontal navigation bar */
 nav {
-  grid-row-start: 2;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Vertical spacing divs */
