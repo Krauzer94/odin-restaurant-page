@@ -1,21 +1,25 @@
-/* CSS reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: 2px solid red;
-}
+* { border: 1px solid red; }
 
-/* Global defaults */
 body {
-  min-height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-columns: 200px 1fr 200px;
+  min-height: 100vh;
+  margin: 0
 }
 
-/* Holy Grail layout */
-.hg-layout {
-  display: grid;
-  grid-template-columns: 200px 1fr 200px;
-  min-height: 100%;
+header, footer {
+  grid-column-end: span 3
+}
+
+main {
+  grid-column-start: 2
+}
+
+nav {
+  grid-row-start: 2
+}
+
+aside {
+  grid-column-start: 3
 }
