@@ -29,6 +29,27 @@ header {
   align-items: center;
 }
 
+/* Navbar buttons specific */
+nav button {
+  /* Spacing */
+  padding: 0.5rem 1rem;
+
+  /* Coloring */
+  border: none;
+  background-color: #FEF3D4;
+  border-bottom: 3px solid #FEF3D4;
+
+  /* Others */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hoover mouse interaction */
+nav button:hover {
+  color: #83664E;
+  border-bottom: 3px solid #83664E;
+}
+
 /* Footer specific styling */
 footer {
   /* Spacing */
