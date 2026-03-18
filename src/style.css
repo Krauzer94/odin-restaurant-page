@@ -77,3 +77,13 @@ main {
 aside {
   grid-column-start: 3;
 }
+
+/* Homepage headline */
+.headline-paragraph {
+  /* Spacing */
+  max-width: 600px;
+  margin: 0 auto;
+
+  /* Coloring */
+  color: #5B4635;
+}
