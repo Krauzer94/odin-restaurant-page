@@ -27,6 +27,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 2rem 0rem;
 }
 
 /* Navbar buttons specific */
