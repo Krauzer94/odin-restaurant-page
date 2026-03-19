@@ -51,8 +51,8 @@ nav button {
 
   /* Coloring */
   border: none;
-  background-color: #FEF3D4;
-  border-bottom: 3px solid #FEF3D4;
+  background-color: #F5D69F;
+  border-bottom: 3px solid #F5D69F;
 
   /* Others */
   cursor: pointer;
@@ -105,7 +105,7 @@ aside {
 
 /* Coffee and sweets images */
 .coffee-sweets-imgs, img {
-  width: 500px;
-  height: 250px;
+  max-width: 400px;
+  max-height: 400px;
   margin: 0 auto;
 }
