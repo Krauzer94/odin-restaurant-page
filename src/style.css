@@ -12,9 +12,6 @@ body {
   min-height: 100vh;
   margin: 0;
 
-  /* Coloring */
-  background-color: #FEF3D4;
-
   /* Background */
   background-image: url('./images/background.jpg');
   background-size: cover;
