@@ -30,6 +30,15 @@ header {
   padding: 2rem 0rem;
 }
 
+/* Main content section */
+#content {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  max-height: 100vh;
+}
+
 /* Navbar buttons specific */
 nav button {
   /* Spacing */
