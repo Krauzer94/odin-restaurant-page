@@ -15,6 +15,10 @@ body {
 
   /* Coloring */
   background-color: #FEF3D4;
+
+  /* Background */
+  background-image: url('./images/background.jpg');
+  background-size: cover;
 }
 
 /* Header and footer defaults */
@@ -99,14 +103,9 @@ aside {
   color: #5B4635;
 }
 
-/* Temporary circle */
-.placeholder-circle {
-  /* Sizing */
-  width: 300px;
-  height: 300px;
+/* Coffee and sweets images */
+.coffee-sweets-imgs, img {
+  width: 500px;
+  height: 250px;
   margin: 0 auto;
-
-  /* Coloring */
-  background-color: rgba(78, 131, 105, 0.5);
-  border-radius: 50%;
 }
