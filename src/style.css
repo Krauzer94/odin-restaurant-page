@@ -31,6 +31,15 @@ header {
   padding: 2rem 0rem;
 }
 
+/* About page specific */
+#content-about {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+}
+
 /* Main content section */
 #content {
   display: grid;
