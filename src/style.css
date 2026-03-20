@@ -55,6 +55,13 @@ nav button {
   font-weight: bold;
 }
 
+/* Header navigation link */
+.navigation-link {
+  /* Coloring */
+  color: #5B4635;
+  text-decoration: none;
+}
+
 /* Hoover mouse interaction */
 nav button:hover {
   color: #83664E;
@@ -73,8 +80,8 @@ footer {
   color: #F2F2F2;
 }
 
-/* Remove link style */
-a {
+/* Copyright text style */
+.copyright-link {
   color: lightblue;
   text-decoration: none;
 }
