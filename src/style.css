@@ -54,7 +54,10 @@ header {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  min-width: 800px;
+  min-width: 790px;
+  min-height: 400px;
+  border: 4px solid #5B4635;
+  border-radius: 8px;
 }
 
 /* Main content section */
@@ -122,24 +125,33 @@ aside {
   grid-column-start: 3;
 }
 
-/* Homepage headline */
+/* Home page headline */
 .headline-paragraph {
-  /* Spacing */
   max-width: 600px;
   margin: 0 auto;
-
-  /* Coloring */
   color: #5B4635;
 }
 
-/* Homepage headline text */
+/* Home page headline text */
 .headline-paragraph-text { 
   font-size: 1.2rem;
 }
 
+/* Menu page headline text */
+.headline-paragraph-text-mp { 
+  font-size: 0.95rem;
+}
+
 /* Coffee and sweets images */
-.coffee-sweets-imgs, img {
+.coffee-sweets-imgs {
   max-width: 400px;
   max-height: 400px;
+  margin: 0 auto;
+}
+
+/* Menu page options images */
+.coffee-sweets-imgs-mp, img {
+  max-width: 250px;
+  max-height: 250px;
   margin: 0 auto;
 }
