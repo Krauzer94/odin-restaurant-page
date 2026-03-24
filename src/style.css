@@ -120,11 +120,6 @@ main {
   grid-column-start: 2;
 }
 
-/* Vertical spacing divs */
-aside {
-  grid-column-start: 3;
-}
-
 /* Home page headline */
 .headline-paragraph {
   max-width: 600px;
