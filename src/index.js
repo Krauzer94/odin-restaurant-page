@@ -1,8 +1,13 @@
 import './style.css';
-import { createHomeCoffeeParagraph, createHomeCoffeeImage } from './home.js';
+import {
+  createHomeCoffeeParagraph,
+  createHomeCoffeeImage,
+  createHomeSweetsImage,
+} from './home.js';
 
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', () => {
   createHomeCoffeeParagraph();
   createHomeCoffeeImage();
+  createHomeSweetsImage();
 });

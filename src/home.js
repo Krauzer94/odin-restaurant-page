@@ -1,4 +1,5 @@
 import coffeeImageFile from './images/coffee.png';
+import sweetsImageFIle from './images/sweets.png';
 
 // Global element variables
 const mainElement = document.getElementById('content');
@@ -38,5 +39,20 @@ function createHomeCoffeeImage() {
     mainElement.appendChild(homeCoffeeImg);
 };
 
+// Home sweets image module
+function createHomeSweetsImage() {
+
+    // Create the image element
+    const homeSweetsImg = document.createElement('img');
+    homeSweetsImg.className = "coffee-sweets-imgs";
+    homeSweetsImg.src = sweetsImageFIle;
+    homeSweetsImg.alt = "Cup of coffee";
+    mainElement.appendChild(homeSweetsImg);
+};
+
 // Export all created modules
-export { createHomeCoffeeParagraph, createHomeCoffeeImage };
+export {
+    createHomeCoffeeParagraph,
+    createHomeCoffeeImage,
+    createHomeSweetsImage,
+};
