@@ -1,12 +1,7 @@
 import './style.css';
-import {
-  createHomeParagraph,
-  createHomeImage,
-} from './home.js';
-
-// Content image elements
+import { createHomeParagraph, createHomeImage } from './home.js';
 import coffeeImageFile from './images/coffee.png';
-import sweetsImageFIle from './images/sweets.png';
+import sweetsImageFile from './images/sweets.png';
 
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', () => {
@@ -26,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Sweets Image
   createHomeImage(
-    sweetsImageFIle,
+    sweetsImageFile,
     "Bakery sweets",
   );
 
