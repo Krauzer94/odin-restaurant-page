@@ -1,3 +1,5 @@
+import coffeeImageFile from './images/coffee.png';
+
 // Global element variables
 const mainElement = document.getElementById('content');
 
@@ -25,5 +27,16 @@ function createHomeCoffeeParagraph() {
     homeCoffeeParagraphDiv.appendChild(homeCoffeeParagraphP);
 };
 
+// Home coffee image module
+function createHomeCoffeeImage() {
+
+    // Create the image element
+    const homeCoffeeImg = document.createElement('img');
+    homeCoffeeImg.className = "coffee-sweets-imgs";
+    homeCoffeeImg.src = coffeeImageFile;
+    homeCoffeeImg.alt = "Cup of coffee";
+    mainElement.appendChild(homeCoffeeImg);
+};
+
 // Export all created modules
-export { createHomeCoffeeParagraph };
+export { createHomeCoffeeParagraph, createHomeCoffeeImage };
