@@ -1,10 +1,19 @@
 import './style.css';
+
 import { createHomeParagraph, createHomeImage } from './home.js';
+import { createAboutParagraph, createAboutMapImage, createContactsParagraph } from './about.js';
+
 import coffeeImageFile from './images/coffee.png';
 import sweetsImageFile from './images/sweets.png';
 
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', () => {
+
+  // WIP about page factory
+  createAboutParagraph();
+  createAboutMapImage();
+  createContactsParagraph();
+
   // Coffee paragraph
   createHomeParagraph(
     'Welcome fellow warrior!',
