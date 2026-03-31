@@ -1,18 +1,14 @@
 import './style.css';
 
 import { createHomeParagraph, createHomeImage } from './home.js';
-import { createAboutParagraph, createAboutMapImage, createContactsParagraph } from './about.js';
+import { createAddressHeadline, createAboutMapImage, createContactsParagraph } from './about.js';
 
 import coffeeImageFile from './images/coffee.png';
 import sweetsImageFile from './images/sweets.png';
+import mapImageFile from './images/google-maps.jpg';
 
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', () => {
-
-  // WIP about page factory
-  createAboutParagraph();
-  createAboutMapImage();
-  createContactsParagraph();
 
   // Coffee paragraph
   createHomeParagraph(
@@ -40,5 +36,25 @@ document.addEventListener('DOMContentLoaded', () => {
     `From golden-crusted breads forged in roaring ovens to sweet pastries kissed with honey and spice, our menu is
     crafted to satisfy even the mightiest of warriors. Whether you seek a quiet moment with a warm brew or a table
     laden with delights to share, Odin Bakery stands as your hall of comfort, where every bite tells a story.`,
+  );
+
+  // Address headline
+  createAddressHeadline(
+    'Meet us at our address',
+    '📌 123 Valhalla Street, Asgard, 45678',
+  );
+
+  // Google Maps image
+  createAboutMapImage(
+    mapImageFile,
+    'Google Maps',
+  );
+
+  // Contacts paragraph
+  createContactsParagraph(
+    'Reach us via our contacts',
+    '+1 (555) 123-4567',
+    'odinbakery@valhalla.com',
+    '@odinbakery',
   );
 });
