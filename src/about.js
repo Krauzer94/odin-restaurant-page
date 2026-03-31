@@ -1,30 +1,28 @@
-import mapImageFile from './images/google-maps.jpg';
-
 // Global element variables
 const mainElement = document.getElementById('content-about');
 
-// About page paragraph module
-function createAboutParagraph() {
+// Address headline module
+function createAddressHeadline(titleText, bodyText) {
 
-  // Headline paragraph container
-  const aboutParagraphDiv = document.createElement('div');
-  aboutParagraphDiv.className = 'headline-paragraph';
-  mainElement.appendChild(aboutParagraphDiv);
+  // Headline container
+  const addressHeadlineDiv = document.createElement('div');
+  addressHeadlineDiv.className = 'headline-paragraph';
+  mainElement.appendChild(addressHeadlineDiv);
 
   // Create headline text
-  const aboutParagraphH2 = document.createElement('h2');
-  aboutParagraphH2.textContent = 'Meet us at our address';
-  aboutParagraphDiv.appendChild(aboutParagraphH2);
+  const addressHeadlineH2 = document.createElement('h2');
+  addressHeadlineH2.textContent = titleText;
+  addressHeadlineDiv.appendChild(addressHeadlineH2);
 
   // Create paragraph text
-  const aboutParagraphP = document.createElement('p');
-  aboutParagraphP.className = 'headline-paragraph-text';
-  aboutParagraphP.textContent = '📌 123 Valhalla Street, Asgard, 45678';
-  aboutParagraphDiv.appendChild(aboutParagraphP);
+  const addressHeadlineP = document.createElement('p');
+  addressHeadlineP.className = 'headline-paragraph-text';
+  addressHeadlineP.textContent = bodyText;
+  addressHeadlineDiv.appendChild(addressHeadlineP);
 };
 
 // Google Maps image module
-function createAboutMapImage() {
+function createAboutMapImage(imageFile, imageAlt) {
 
   // Create element container
   const aboutMapDiv = document.createElement('div');
@@ -33,13 +31,18 @@ function createAboutMapImage() {
 
   // Create image element
   const aboutMapImage = document.createElement('img');
-  aboutMapImage.src = mapImageFile;
-  aboutMapImage.alt = 'Google Maps';
+  aboutMapImage.src = imageFile;
+  aboutMapImage.alt = imageAlt;
   aboutMapDiv.appendChild(aboutMapImage);
 };
 
 // About page contacts module
-function createContactsParagraph() {
+function createContactsParagraph(
+  titleText,
+  phoneNumber,
+  emailAddress,
+  instagramProfile,
+) {
 
   // Headline paragraph container
   const contactsParagraphDiv = document.createElement('div');
@@ -49,7 +52,7 @@ function createContactsParagraph() {
 
   // Create headline text
   const contactsParagraphH2 = document.createElement('h2');
-  contactsParagraphH2.textContent = 'Reach us via out cotacts';
+  contactsParagraphH2.textContent = titleText;
   contactsParagraphDiv.appendChild(contactsParagraphH2)
 
   // Create paragraph text
@@ -57,19 +60,17 @@ function createContactsParagraph() {
   contactsParagraphP.className = 'headline-paragraph-text';
 
   // All paragraph contents
-  contactsParagraphP.append("📞 Phone: +1 (555) 123-4567");
+  contactsParagraphP.append(`📞 Phone: ${phoneNumber}`);
   contactsParagraphP.appendChild(document.createElement("br"));
-  contactsParagraphP.append("📧 Email: odinbakery@valhalla.com");
+  contactsParagraphP.append(`📧 Email: ${emailAddress}`);
   contactsParagraphP.appendChild(document.createElement("br"));
-  contactsParagraphP.append("📷 Instagram: @odinbakery");
-
-  // Append generated content
+  contactsParagraphP.append(`📷 Instagram: ${instagramProfile}`);
   contactsParagraphDiv.appendChild(contactsParagraphP);
 };
 
 // Export all created modules
 export {
-  createAboutParagraph,
+  createAddressHeadline,
   createAboutMapImage,
   createContactsParagraph,
 };
