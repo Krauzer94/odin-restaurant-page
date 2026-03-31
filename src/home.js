@@ -4,17 +4,17 @@ const mainElement = document.getElementById('content');
 // Paragraph factory module
 function createHomeParagraph(titleText, bodyText) {
 
-  // Headline paragraph div
+  // Headline container
   const homeParagraphDiv = document.createElement('div');
   homeParagraphDiv.className = 'headline-paragraph';
   mainElement.appendChild(homeParagraphDiv);
 
-  // Create headline text
+  // Headline content
   const homeParagraphH2 = document.createElement('h2');
   homeParagraphH2.textContent = titleText;
   homeParagraphDiv.appendChild(homeParagraphH2);
 
-  // Create paragraph text
+  // Paragraph element
   const homeParagraphP = document.createElement('p');
   homeParagraphP.className = 'headline-paragraph-text';
   homeParagraphP.textContent = bodyText;
@@ -24,11 +24,11 @@ function createHomeParagraph(titleText, bodyText) {
 // Image factory module
 function createHomeImage(imageFile, imageAlt) {
 
-  // Create image element
+  // Image element
   const homeImgElement = document.createElement('img');
   homeImgElement.className = "coffee-sweets-imgs";
 
-  // Metadata and append
+  // Image content
   homeImgElement.src = imageFile;
   homeImgElement.alt = imageAlt;
   mainElement.appendChild(homeImgElement);

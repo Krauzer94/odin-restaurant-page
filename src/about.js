@@ -1,4 +1,3 @@
-// Global element variables
 const mainElement = document.getElementById('content-about');
 
 // Address headline module
@@ -9,12 +8,12 @@ function createAddressHeadline(titleText, bodyText) {
   addressHeadlineDiv.className = 'headline-paragraph';
   mainElement.appendChild(addressHeadlineDiv);
 
-  // Create headline text
+  // Headline content
   const addressHeadlineH2 = document.createElement('h2');
   addressHeadlineH2.textContent = titleText;
   addressHeadlineDiv.appendChild(addressHeadlineH2);
 
-  // Create paragraph text
+  // Paragraph element
   const addressHeadlineP = document.createElement('p');
   addressHeadlineP.className = 'headline-paragraph-text';
   addressHeadlineP.textContent = bodyText;
@@ -24,12 +23,12 @@ function createAddressHeadline(titleText, bodyText) {
 // Google Maps image module
 function createAboutMapImage(imageFile, imageAlt) {
 
-  // Create element container
+  // Image container
   const aboutMapDiv = document.createElement('div');
   aboutMapDiv.className = 'google-maps-img';
   mainElement.appendChild(aboutMapDiv);
 
-  // Create image element
+  // Image content
   const aboutMapImage = document.createElement('img');
   aboutMapImage.src = imageFile;
   aboutMapImage.alt = imageAlt;
@@ -44,22 +43,22 @@ function createContactsParagraph(
   instagramProfile,
 ) {
 
-  // Headline paragraph container
+  // Headline container
   const contactsParagraphDiv = document.createElement('div');
   contactsParagraphDiv.className = 'headline-paragraph';
   contactsParagraphDiv.style.marginTop = "-3rem";
   mainElement.appendChild(contactsParagraphDiv);
 
-  // Create headline text
+  // Headline content
   const contactsParagraphH2 = document.createElement('h2');
   contactsParagraphH2.textContent = titleText;
   contactsParagraphDiv.appendChild(contactsParagraphH2)
 
-  // Create paragraph text
+  // Paragraph container
   const contactsParagraphP = document.createElement('p');
   contactsParagraphP.className = 'headline-paragraph-text';
 
-  // All paragraph contents
+  // Paragraph content
   contactsParagraphP.append(`📞 Phone: ${phoneNumber}`);
   contactsParagraphP.appendChild(document.createElement("br"));
   contactsParagraphP.append(`📧 Email: ${emailAddress}`);
@@ -68,7 +67,6 @@ function createContactsParagraph(
   contactsParagraphDiv.appendChild(contactsParagraphP);
 };
 
-// Export all created modules
 export {
   createAddressHeadline,
   createAboutMapImage,
