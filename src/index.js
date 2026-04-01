@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
       laden with delights to share, Odin Bakery stands as your hall of comfort, where every bite tells a story.`,
     );
   };
-  loadHomePage();
 
   // Load menu page content
   function loadMenuPage() {
@@ -98,8 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
       '(600g): $18.00',
     );
   };
-  // WIP: Call via on-click event listener
-  // loadMenuPage()
 
   // Placeholder: Load about page content
   function loadAboutPage() {
@@ -124,7 +121,33 @@ document.addEventListener('DOMContentLoaded', () => {
       '@odinbakery',
     );
   };
-  // WIP: Call via on-click event listener
-  // loadAboutPage();
+
+  // Render home by default
+  const mainElement = document.getElementById('content');
+  mainElement.id = 'content';
+  loadHomePage();
+
+  // Navigation helper module
+  function renderPage(pageId, loadPage) {
+    mainElement.id = pageId;
+    mainElement.textContent = '';
+    loadPage();
+  }
+
+  // Navigation event listeners
+  document.querySelectorAll('.navigation-link').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      // Interactively change pages
+      if (link.textContent === 'HOME') {
+        renderPage('content', loadHomePage);
+      } else if (link.textContent === 'MENU') {
+        renderPage('content-menu', loadMenuPage);
+      } else if (link.textContent === 'ABOUT') {
+        renderPage('content-about', loadAboutPage);
+      }
+    });
+  });
 
 });
