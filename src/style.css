@@ -43,7 +43,7 @@ header {
 /* About page specific */
 #content-about {
   display: grid;
-  grid-template-rows: 0fr 2fr 1fr;
+  grid-template-rows: 0fr 3fr 1fr;
   justify-items: center;
   align-items: center;
   height: 100%;
