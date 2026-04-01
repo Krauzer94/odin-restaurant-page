@@ -1,5 +1,6 @@
-// Global element variables
-const mainElement = document.getElementById('content');
+function getMainElement() {
+  return document.getElementById('content');
+};
 
 // Paragraph factory module
 function createHomeParagraph(titleText, bodyText) {
@@ -7,7 +8,7 @@ function createHomeParagraph(titleText, bodyText) {
   // Headline container
   const homeParagraphDiv = document.createElement('div');
   homeParagraphDiv.className = 'headline-paragraph';
-  mainElement.appendChild(homeParagraphDiv);
+  getMainElement().appendChild(homeParagraphDiv);
 
   // Headline content
   const homeParagraphH2 = document.createElement('h2');
@@ -31,7 +32,7 @@ function createHomeImage(imageFile, imageAlt) {
   // Image content
   homeImgElement.src = imageFile;
   homeImgElement.alt = imageAlt;
-  mainElement.appendChild(homeImgElement);
+  getMainElement().appendChild(homeImgElement);
 };
 
 // Export all created modules

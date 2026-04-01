@@ -1,4 +1,6 @@
-const mainElement = document.getElementById('content-menu');
+function getMainElement() {
+  return document.getElementById('content-menu');
+};
 
 // Image factory module
 function createMenuImage(imageFile, imageAlt) {
@@ -6,7 +8,7 @@ function createMenuImage(imageFile, imageAlt) {
   // Image cotainer
   const menuImageDiv = document.createElement('div');
   menuImageDiv.className = "coffee-sweets-imgs-mp";
-  mainElement.appendChild(menuImageDiv);
+  getMainElement().appendChild(menuImageDiv);
 
   // Image element
   const menuImgElement = document.createElement('img');
@@ -30,7 +32,7 @@ function createMenuParagraph(
   // Headline container
   const menuParagraphDiv = document.createElement('div');
   menuParagraphDiv.className = 'headline-paragraph';
-  mainElement.appendChild(menuParagraphDiv);
+  getMainElement().appendChild(menuParagraphDiv);
 
   // Headline content
   const menuParagraphH2 = document.createElement('h3');

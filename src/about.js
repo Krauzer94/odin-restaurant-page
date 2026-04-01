@@ -1,4 +1,6 @@
-const mainElement = document.getElementById('content-about');
+function getMainElement() {
+  return document.getElementById('content-about');
+};
 
 // Address headline module
 function createAddressHeadline(titleText, bodyText) {
@@ -6,7 +8,7 @@ function createAddressHeadline(titleText, bodyText) {
   // Headline container
   const addressHeadlineDiv = document.createElement('div');
   addressHeadlineDiv.className = 'headline-paragraph';
-  mainElement.appendChild(addressHeadlineDiv);
+  getMainElement().appendChild(addressHeadlineDiv);
 
   // Headline content
   const addressHeadlineH2 = document.createElement('h2');
@@ -26,7 +28,7 @@ function createAboutMapImage(imageFile, imageAlt) {
   // Image container
   const aboutMapDiv = document.createElement('div');
   aboutMapDiv.className = 'google-maps-img';
-  mainElement.appendChild(aboutMapDiv);
+  getMainElement().appendChild(aboutMapDiv);
 
   // Image content
   const aboutMapImage = document.createElement('img');
@@ -47,7 +49,7 @@ function createContactsParagraph(
   const contactsParagraphDiv = document.createElement('div');
   contactsParagraphDiv.className = 'headline-paragraph';
   contactsParagraphDiv.style.marginTop = "-3rem";
-  mainElement.appendChild(contactsParagraphDiv);
+  getMainElement().appendChild(contactsParagraphDiv);
 
   // Headline content
   const contactsParagraphH2 = document.createElement('h2');
